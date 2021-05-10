@@ -55,7 +55,7 @@
     <div id="unity-progress-bar">
     </div>
   </div>
-  <script src="Build/8.loader.js"></script>
+  <script src="8.loader.js"></script>
   <script>
     const maxPixelRatioMobile = 2.0;
     const maxPixelRatioDesktop = 1.5;
@@ -65,11 +65,11 @@
     var pixelRatio = Math.min(window.devicePixelRatio, maxDevicePixelRatio);
 
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/8.loader.js";
+    var loaderUrl = "8.loader.js";
     var config = {
-      dataUrl: buildUrl + "/8.data",
-      frameworkUrl: buildUrl + "/8.framework.js",
-      codeUrl: buildUrl + "/8.wasm",
+      dataUrl: "8.data",
+      frameworkUrl: "8.framework.js",
+      codeUrl: "8.wasm",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "JohannesDeml",
       productName: "WebLoadingTest",
