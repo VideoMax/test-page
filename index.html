@@ -55,7 +55,7 @@
     <div id="unity-progress-bar">
     </div>
   </div>
-  <script src="Build/9.loader.js"></script>
+  <script src="Build/9 asm.asm.loader.js"></script>
   <script>
     const maxPixelRatioMobile = 2.0;
     const maxPixelRatioDesktop = 1.5;
@@ -65,11 +65,12 @@
     var pixelRatio = Math.min(window.devicePixelRatio, maxDevicePixelRatio);
 
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/9.loader.js";
+    var loaderUrl = buildUrl + "/9 asm.asm.loader.js";
     var config = {
-      dataUrl: buildUrl + "/9.data",
-      frameworkUrl: buildUrl + "/9.framework.js",
-      codeUrl: buildUrl + "/9.wasm",
+      dataUrl: buildUrl + "/9 asm.data",
+      frameworkUrl: buildUrl + "/9 asm.asm.framework.js",
+      codeUrl: buildUrl + "/9 asm.asm.js",
+        memoryUrl: buildUrl + "/9 asm.asm.mem",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "JohannesDeml",
       productName: "WebLoadingTest",
